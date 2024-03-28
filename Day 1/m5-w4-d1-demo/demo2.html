@@ -18,12 +18,12 @@
         <option value="red">red</option>
       </select>
       <p><b><code>bgColor</code></b></p>
-      <select onChange="">
+      <select onChange="setBodyAttr('bgColor', this.options[this.selectedIndex].value);">
         <option value="white">white</option>
         <option value="lightgrey">gray</option>
       </select>
       <p><b><code>link</code></b></p>
-      <select onChange="">
+      <select onChange="setBodyAttr('link', this.options[this.selectedIndex].value);">
         <option value="blue">blue</option>
         <option value="green">green</option>
       </select>
