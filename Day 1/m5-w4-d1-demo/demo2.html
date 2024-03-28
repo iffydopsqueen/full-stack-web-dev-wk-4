@@ -3,13 +3,17 @@
   <title>DOM Tests</title>
   <script>
     //add function here
+    function setBodyAttr(attr, value) {
+      if (document.body) document.body[attr] = value;
+      else throw new Error("no support");
+    }
   </script>
 </head>
 <body>
   <div style="margin: .5in; height: 400px;">
     <p><b><code>text</code></b></p>
     <form>
-      <select onChange="">
+      <select onChange="setBodyAttr('text', this.options[this.selectedIndex].value);">
         <option value="black">black</option>
         <option value="red">red</option>
       </select>
