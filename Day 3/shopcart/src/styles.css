@@ -1,0 +1,193 @@
+.App .App-header {
+    background-color: #00b4d8;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.App .text-heading {
+    margin-left: 15px;
+    margin-right: 8px;
+}
+  
+.App .cart-icon {
+    font-size: 15px;
+}
+  
+.App .product-item {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+  
+.App .product-description {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.App .product-description, 
+.product-price {
+    display: inline-block; /* display both property on a single line */
+    margin-right: 20px; /* Add margin between the two elements */
+}
+
+.App .product-price {
+    font-size: 14px;
+    color: red;
+}
+  
+.App .product-content {
+    display: flex;
+    align-items: center;
+}
+  
+.App .product-content img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.App .product-description, 
+.product-content {
+    margin-left: 40px;
+}
+
+.App .product-value input {
+    border: 2px solid #ccc;
+    text-align: center;
+    font-size: 11px;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+  
+.App .product-value {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+  
+.App .product-value span {
+    margin-left: 5px;
+    font-size: 10px;
+    position: absolute;
+    top: -20px;
+    left: 109px;
+
+}
+
+.App .cart-heading {
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.App .cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0.1px solid rgba(128, 128, 128, 0.2);
+    margin-left: 30px;
+    width: 70%;
+    position: relative;
+}
+
+.App .cart-item-image {
+    width: 90px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.App .cart-item-description {
+    font-size: 11px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.App .cart-item-quantity {
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    left: 15%;
+}
+
+/* Styling the 'Add' & 'Subtract' button */
+.App .product-value button {
+    background-color: #606060;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: flex; /* Add flex display */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+/* Styling the 'R' in React on the nav bar */
+.App .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Add styles for the circle */
+.App .circle {
+    width: 40px; /* Adjust circle size as needed */
+    height: 40px; /* Adjust circle size as needed */
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App .just-R {
+    color: #00b4d8; /* Blue color for the "R" */
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+.App .left-nav {
+    display: flex;
+}
+
+/* Check Out button styling */
+/* .btn .btn-primary {
+    margin-left: 60px;
+} */
+
+.App .card-text form {
+    width: 250px;
+}
+
+.App .align-left {
+    text-align: left;
+}
+
+.cart-text, .btn {
+    margin-left: 60px;
+}
+
+/* Sorting */
+.App .sort-dropdown {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: baseline;   /* Put both items exactly on the same line */
+    justify-content: center;   /* Center the dropdown horizontally */
+    margin-top: 40px;  /* Space at the top */
+    padding-bottom: 30px;    /* Space at the bottom */
+}
+
+.App .sort-dropdown select {
+    margin-left: 15px; /* Add space between text and select box */
+}
