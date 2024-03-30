@@ -177,3 +177,17 @@
 .cart-text, .btn {
     margin-left: 60px;
 }
+
+/* Sorting */
+.App .sort-dropdown {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: baseline;   /* Put both items exactly on the same line */
+    justify-content: center;   /* Center the dropdown horizontally */
+    margin-top: 40px;  /* Space at the top */
+    padding-bottom: 30px;    /* Space at the bottom */
+}
+
+.App .sort-dropdown select {
+    margin-left: 15px; /* Add space between text and select box */
+}

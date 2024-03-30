@@ -14,9 +14,15 @@ class App extends Component {
     super(props);
     this.state = {
       products: productsData,
-      totalQuantity: 0 // Initialize total quantity - keep track of the total quantity
+      totalQuantity: 0, // Initialize total quantity - keep track of the total quantity
+      sortBy: "normal"
     };
   }
+
+  // Function to handle sorting change
+  handleSortChange = (e) => {
+    this.setState({ sortBy: e.target.value });
+  };
 
   componentDidMount() {
     this.calculateTotalQuantity(); // Calculate total quantity on mount
